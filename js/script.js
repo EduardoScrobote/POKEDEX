@@ -19,9 +19,10 @@ const showPokemons = (data) => {
         div.className = 'card';
         const img = document.createElement('img');
         const name = document.createElement('h2');
+        const typeContainer = document.createElement('div');
         name.innerText = pokemon.name;
         name.className = 'name';
-
+        
         getPokemonInfo(pokemon.url).then((data) => {
             img.src = data.sprites.front_default;
             data.types.forEach((type) => {
@@ -29,11 +30,13 @@ const showPokemons = (data) => {
                 typeElement.innerText = type.type.name;
                 typeElement.className = 'type';
                 typeElement.id = type.type.name;
-                div.appendChild(typeElement);
+                typeContainer.appendChild(typeElement);
             });
         });
+        typeContainer.className = 'type-container';
         div.appendChild(img);
         div.appendChild(name);
+        div.appendChild(typeContainer);
         list.appendChild(div);
     });
 }

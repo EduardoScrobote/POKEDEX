@@ -16,7 +16,7 @@ body {
     height: 100vh;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 } 
 
 .card {
@@ -34,6 +34,90 @@ body {
     align-items: center;
 }
 
+.type-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .type {
-    width: 50px;
+    min-width: 50px;
+    background-color: #101010;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#fire {
+    background-color: #f08030;
+}
+
+#water {
+    background-color: #6890f0;
+}
+
+#grass {
+    background-color: #78c850;
+}
+
+#electric {
+    background-color: #f8d030;
+}
+
+#ground {
+    background-color: #e0c068;
+}
+
+#rock {
+    background-color: #b8a038;
+}
+
+#fairy {
+    background-color: #ee99ac;
+}
+
+#poison {
+    background-color: #a040a0;
+}
+
+#bug {
+    background-color: #a8b820;
+}
+
+#dragon {
+    background-color: #7038f8;
+}
+
+#psychic {
+    background-color: #f85888;
+}
+
+#flying {
+    background-color: #a890f0;
+}
+
+#fighting {
+    background-color: #c03028;
+}
+
+#normal {
+    background-color: #a8a878;
+}
+
+#ghost {
+    background-color: #705898;
+}
+
+#ice {
+    background-color: #98d8d8;
+}
+
+#dark {
+    background-color: #705848;
+}
+
+#steel {
+    background-color: #b8b8d0;
 }
